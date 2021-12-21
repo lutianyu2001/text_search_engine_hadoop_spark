@@ -1,4 +1,4 @@
-# Data Processing Workshop II Project ( in 2022 )
+# Data Processing Workshop II Project
 
 Group 32
 
