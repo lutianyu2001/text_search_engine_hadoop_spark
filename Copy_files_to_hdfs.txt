@@ -1,0 +1,31 @@
+Data Files are stored in /root/workshop32/dataset/
+
+Directory Structure:
+
+/root/workshop32/dataset/
+    - small_set: a small dataset, 100 MiB <= size <= 1000 MiB
+    - large_set: a large dataset, size >= 1000 MiB
+
+Create Folders:
+
+hdfs dfs -mkdir -p /workshop32/
+hdfs dfs -mkdir -p /workshop32/dataset/
+hdfs dfs -mkdir -p /workshop32/dataset/small_set/
+hdfs dfs -mkdir -p /workshop32/dataset/large_set/
+
+
+Copy to hdfs /workshop32/dataset/:
+
+cd /root/workshop32/dataset/
+
+cd ./small_set/
+hdfs dfs -put * /workshop32/dataset/small_set/
+hdfs dfs -ls /workshop32/dataset/small_set/
+
+cd ../large_set/
+hdfs dfs -put * /workshop32/dataset/large_set/
+hdfs dfs -ls /workshop32/dataset/large_set/
+
+cd ../
+
+

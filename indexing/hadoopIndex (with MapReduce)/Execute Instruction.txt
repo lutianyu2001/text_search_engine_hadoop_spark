@@ -1,0 +1,13 @@
+Execute Instruction
+
+java -jar simpIndex.jar [HDFS_inputDirectory] [HDFS_outputDirectory]
+
+Attention: you should ensure the [HDFS_outputDirectory] must not exist
+You can use this to delete the existed [HDFS_outputDirectory]
+
+hdfs dfs -rm -r [HDFS_outputDirectory]
+
+Example:
+
+hadoop jar hadoopIndex.jar Index.IndexDriver "/workshop32/dataset/small_set/" "/workshop32/dataset/index_output/"
+

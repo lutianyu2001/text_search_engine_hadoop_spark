@@ -1,0 +1,15 @@
+Compile Instruction
+
+Start from the root directory of the program which have "src" and "class" directory
+Make sure you create the "class" maually, as javac will not create it for you !
+Also make sure the "class" directory be empty, as it will store the compiled file !
+
+Execute the following code:
+
+hadoop com.sun.tools.javac.Main -d "./class/" "./src/IndexDriver.java" "./src/IndexMapper.java" "./src/IndexReducer.java" "./src/util/MyArrayWritable.java"
+
+cd ./class/
+jar cf "../hadoopIndex.jar" "./Index/"
+cd ../
+jar -tf hadoopIndex.jar
+

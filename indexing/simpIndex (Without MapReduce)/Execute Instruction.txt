@@ -1,0 +1,9 @@
+Execute Instruction
+
+java -jar simpIndex.jar [inputDirectory] [outputDirectory]
+
+the output file name will be "out_index.txt"
+
+Example:
+
+java -jar simpIndex.jar "./dataset" "./"

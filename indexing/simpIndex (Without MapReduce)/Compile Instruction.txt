@@ -1,0 +1,13 @@
+Compile Instruction
+
+Start from the root directory of the program which have "src" and "class" directory
+Make sure you create the "class" maually, as javac will not create it for you !
+Also make sure the "class" directory be empty, as it will store the compiled file !
+
+Execute the following code:
+
+javac -d "./class/" "./src/com/*.java"
+cd ./class/
+jar cvfm "../simpIndex.jar" "../src/MANIFEST.MF" "./com/"
+cd ../
+jar -tf simpIndex.jar
